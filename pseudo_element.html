@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        h3::after{
+            content: '.pdf';
+            color: red;
+            font-size: 20px;
+            background-color: aqua;
+        }
+        h3::before{
+            content: 'start : ';
+        }
+        p::first-letter{
+            font-size: 3em;
+        }
+        p::first-line{
+            background-color: aqua;
+        }
+        ::selection{
+            background-color: yellow;
+        }
+        input::placeholder{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>heading -1</h3>
+    <h3>heading -2</h3>
+    <h3>heading -3</h3>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/website_layout-300x268.png" alt="">
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum totam nostrum corrupti esse veritatis animi ducimus vitae mollitia omnis? Alias!</p>
+    <p>Accusantium, accusamus voluptas quis placeat quisquam odio fugit, exercitationem minus, quae possimus consequatur dicta architecto dignissimos amet magnam corrupti vel.</p>
+    <p>Hic alias amet exercitationem, culpa, odit molestias ea dolore ipsam veritatis quaerat aut fugit atque velit, esse aspernatur quod repellendus?</p>
+    <input type="text" placeholder="Color changed">
+</body>
+</html>
